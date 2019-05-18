@@ -9,6 +9,4 @@ export default props =>
         {
           <Text style={Padrao.ex}>{ParImpar(props.numero)}</Text> 
         }
-
     </View>
-

@@ -5,8 +5,19 @@ import Simples from './componentes/Simples'
 import Parlmpar from './componentes/Parlmpar'
 import { Inverter, MegaSena } from './componentes/Muilti'
 import Contador from './componentes/Contador'
+import NotAndroid from './componentes/Plataformas'
+import ValidarProps   from './componentes/ValidarProps'
 
 export default createDrawerNavigator({
+    ValidarProps:{
+        screen : () => <ValidarProps ano={18}/>
+    },
+
+    NotAndroid:{
+        screen :() => <NotAndroid/>
+        
+    },
+
     Contador:{
         screen : () => <Contador  /> 
     },
