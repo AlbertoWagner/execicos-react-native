@@ -6,25 +6,47 @@ import Parlmpar from './componentes/Parlmpar'
 import { Inverter, MegaSena } from './componentes/Muilti'
 import Contador from './componentes/Contador'
 import NotAndroid from './componentes/Plataformas'
-import ValidarProps   from './componentes/ValidarProps'
+import ValidarProps from './componentes/ValidarProps'
+import Evento from './componentes/Evento'
+import Avo  from './componentes/ComunicaçaoDireta'
+import ComunicacaoIndireta from './componentes/ComunicacaoIndireta'
 
 export default createDrawerNavigator({
-    ValidarProps:{
-        screen : () => <ValidarProps ano={18}/>
+
+    ComunicacaoIndireta : {
+        navigationOptions: { title: 'Comunicacao Indireta' },
+
+        screen : () => <ComunicacaoIndireta></ComunicacaoIndireta>
+
+
     },
 
-    NotAndroid:{
-        screen :() => <NotAndroid/>
-        
+    Avo :{
+        screen : () =>
+        <Avo nome={'jose'}  sobrenome={'silva'}></Avo>
     },
 
-    Contador:{
-        screen : () => <Contador  /> 
+    Evento: {
+        screen: Evento
+
+    },
+
+    ValidarProps: {
+        screen: () => <ValidarProps ano={18} />
+    },
+
+    NotAndroid: {
+        screen: () => <NotAndroid />
+
+    },
+
+    Contador: {
+        screen: () => <Contador />
     },
     MegaSena: {
-       
+
         screen: () => < MegaSena />,
-        navigationOptions : { title: 'Mega Sena ' },
+        navigationOptions: { title: 'Mega Sena ' },
     },
     Inverter: {
         screen: () => <Inverter texto='Wagner' />
@@ -32,7 +54,7 @@ export default createDrawerNavigator({
     Parlmpar: {
 
         screen: () => <Parlmpar numero={30} />,
-        navigationOptions :{ title: 'Par & Impar' },
+        navigationOptions: { title: 'Par & Impar' },
 
 
     },

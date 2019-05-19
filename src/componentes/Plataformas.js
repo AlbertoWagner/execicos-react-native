@@ -1,7 +1,7 @@
 import React from 'react'
 import {Button , Alert , ToastAndroid , Platform } from 'react-native'
 
-export const fun = (props) =>{ 
+export const NotAndroid = (props) =>{ 
 
     const notificar = msg =>{
         if(Platform.OS === 'android'){
@@ -18,4 +18,4 @@ export const fun = (props) =>{
 
 }
 
-export default fun
+export default NotAndroid
