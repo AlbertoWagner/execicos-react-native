@@ -10,13 +10,21 @@ import ValidarProps from './componentes/ValidarProps'
 import Evento from './componentes/Evento'
 import Avo  from './componentes/ComunicaçaoDireta'
 import ComunicacaoIndireta from './componentes/ComunicacaoIndireta'
+import ListaFlex from './componentes/ListaFlex'
 
 export default createDrawerNavigator({
 
-    ComunicacaoIndireta : {
-        navigationOptions: { title: 'Comunicacao Indireta' },
 
-        screen : () => <ComunicacaoIndireta></ComunicacaoIndireta>
+    ListaFlex : {
+        screen:  ListaFlex,
+
+    }
+    ,
+
+    ComunicacaoIndireta : {
+
+        screen : () => <ComunicacaoIndireta></ComunicacaoIndireta>,
+        navigationOptions: { title: 'Comunicacao Indireta' },
 
 
     },
